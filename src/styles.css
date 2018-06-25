@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
+.btn{
+    font-size: 14px;
+    color: #303233;
+    text-decoration: none;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);  
+    background-color: white;
+}
+.btn:hover{
+    color:white;
+    background-color: #fd7e14;
+}
+hr{
+    border-top:solid 2px #fd7e14;
+    width: 50px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+h2{
+    margin-top: 80px;
+}
+a:not([href]):not([tabindex]):hover{
+    color:white;  
+}
+
+.nav-link{
+    color: #fd7e14;
+}
+
+.active{
+    background-color: lightgray;
+    color: black;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #fd7e14;
+    color: white;
+}
+.nav-pills .nav-link:hover{
+    color: black;
+}

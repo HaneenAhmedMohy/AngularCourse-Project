@@ -1,0 +1,52 @@
+<header>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h1 class="display-4">{{homeData.headtitle}}</h1>
+          <p class="lead headpar">{{homeData.headPar}}</p>
+          <p class="lead">
+            <a class="btn  btn-lg"  role="button" (click)="redirectTo()">{{homeData.button}}</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<h2 class="text-center">{{homeData.secOne}}</h2>
+<hr>
+<ngb-carousel>
+    <ng-template ngbSlide>
+      <img src="{{homeData.img3}}" class="imgNav"  alt="Random first slide">
+      <div class="carousel-caption">
+        <h3>{{homeData.slide1H}}</h3>
+        <p class="slidePar">{{homeData.slide1p}}</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="{{homeData.img1}}" class="imgNav"  alt="Random second slide">
+      <div class="carousel-caption">
+        <h3>{{homeData.slide2H}}</h3>
+        <p class="slidePar">{{homeData.slide2p}}</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="{{homeData.img2}}"class="imgNav" alt="Random third slide">
+      <div class="carousel-caption">
+        <h3>{{homeData.slide3H}}</h3>
+        <p class="slidePar">{{homeData.slide3p}}</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+
+  <app-cards></app-cards>
+
+
+  <div class="bg-light">
+    <h2 class="text-center pt-5">{{homeData.secFour}}</h2>
+    <hr>
+    <p class="text-center pb-5 mb-0 w-75 mx-auto">
+      {{homeData.text}}
+    </p>
+  </div>
